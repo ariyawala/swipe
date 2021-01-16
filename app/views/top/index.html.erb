@@ -3,7 +3,7 @@
     <nav class="navbar navbar-light">
       <a class="navbar-brand text-white">Swipe</a>
       <div class="navbar__sign-in-btn">
-        <%= link_to "log in", "#", class: "btn my-2 my-sm-0 bg-light text-top-color" %>
+        <%= link_to "log in", new_user_session_path, class: "btn my-2 my-sm-0 bg-light text-top-color" %>
       </div>
     </nav>
   </div>
@@ -16,10 +16,10 @@
 
   <div class="top-authentication text-center">
     <div class="top-authentication__sign-up-btn m-3">
-      <%= link_to "create an account", "#", class: "btn text-white" %>
+      <%= link_to "create an account", new_user_registration_path, class: "btn text-white" %>
     </div>
     <div class="top-authentication__sign-in-btn m-3">
-      <%= link_to "log in", "#", class: "btn text-white" %>
+      <%= link_to "log in", new_user_session_path, class: "btn text-white" %>
     </div>
   </div>
 </div>
