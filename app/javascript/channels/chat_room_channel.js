@@ -10,7 +10,7 @@ const appChatRoom = consumer.subscriptions.create("ChatRoomChannel", {
   },
 
   received(data) {
-    const chatMessages = document.getElementsById('chat-messages');
+    const chatMessages = document.getElementById('chat-messages');
     chatMessages.insertAdjacentHTML('beforeend', data['chat_message']);
   },
 
